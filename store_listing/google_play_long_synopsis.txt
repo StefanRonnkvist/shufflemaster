@@ -1,0 +1,43 @@
+Shuffle Master is an interactive card tool for exploring a standard 52-card deck, understanding perfect Faro shuffles, following binary shuffle sequences, and playing Black Jack with Faro-ordered decks.
+
+Whether you are learning card handling, studying shuffle mathematics, practicing a routine, or curious about where every card moves, Shuffle Master turns deck permutations into something you can see and control.
+
+VISUALIZE PERFECT FARO SHUFFLES
+
+Step through both major Faro methods:
+
+- Out-Faro, where the original top card stays on top
+- In-Faro, where the first card from the lower half moves to the top
+
+Advance one shuffle at a time, run the sequence automatically, follow the shuffle counter, or reset the deck. Animated movement and cycle messages make each change easier to track. A standard deck completes an out-Faro cycle in 8 shuffles and an in-Faro cycle in 52.
+
+LEARN BINARY SHUFFLE SEQUENCES
+
+Enter a value from 0 to 51 and see its six binary places translated into a sequence of perfect Faro shuffles. Each processed 0 bit applies an out-shuffle, each 1 bit applies an in-shuffle, and higher unused places are ignored. Emulate the sequence to watch the original top card move through the deck step by step; a value of 0 leaves the deck unchanged.
+
+TAKE THE FARO CHALLENGE
+
+Choose Out, In, or Binary. Set 1 to 8 out-shuffles, 1 to 52 in-shuffles, or build a binary In/Out sequence. The resulting deck stays face down so you can predict a card's location from position 1 through 52, then tap any position to reveal or hide the card and check your answer.
+
+DEAL AN ORDERED BLACK JACK TABLE
+
+Apply an In, Out, or Binary shuffle order before dealing five player hands and a dealer. Play each highlighted hand in turn with Hit or Stand; a bust or 21 ends the turn automatically. After all five players finish, the dealer hits on 17 or less unless every player busted, then non-busted hands show Win, Lose, or Push. Continue while at least 12 cards remain or rebuild the selected deck order with Shuffle. Your current game and settings are saved locally and restored when you return.
+
+CUSTOMIZE AND EXPLORE
+
+Browse the complete deck grouped by suit and choose from 10 card-back designs. Your selected design is remembered and used in the Faro Challenge and Black Jack views. The Information tab can send a question with displayed app diagnostics and load app-filtered inquiry details; these network features require an internet connection.
+
+KEY FEATURES
+
+- Complete standard 52-card deck reference
+- Animated in-Faro and out-Faro shuffle cycles
+- Manual and automatic shuffle progression
+- Binary Faro emulation for values from 0 to 51
+- Face-down Faro prediction challenge with Out, In, and Binary modes
+- Five-hand Black Jack table with automatic dealer play
+- Persistent Black Jack progress and shuffle settings
+- 10 selectable card-back designs
+- Responsive layouts for phones, tablets, and larger screens
+- Built-in Help plus network-based contact and inquiry views
+
+Explore the structure behind perfect shuffles and put that knowledge into practice with Shuffle Master.

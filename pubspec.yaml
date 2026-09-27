@@ -1,0 +1,35 @@
+name: shufflemaster
+description: "Interactive Faro shuffle, card tracking, and Black Jack tools."
+publish_to: 'none'
+version: 0.1.14+15
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.5.0
+  msix: ^3.18.0
+  package_info_plus: ^10.2.1
+  playing_cards: ^0.4.1+11
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - web/icons/icon-512.png
+
+
+
+
+
+
+
+msix_config:
+  msix_version: 0.1.14.15
