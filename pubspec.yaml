@@ -1,7 +1,7 @@
 name: shufflemaster
 description: "Interactive Faro shuffle, card tracking, and Black Jack tools."
 publish_to: 'none'
-version: 0.1.14+15
+version: 0.1.15+16
 
 environment:
   sdk: ^3.13.2
@@ -32,4 +32,4 @@ flutter:
 
 
 msix_config:
-  msix_version: 0.1.14.15
+  msix_version: 0.1.15.16

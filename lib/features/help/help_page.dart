@@ -8,9 +8,11 @@ class HelpPage extends StatelessWidget {
       icon: Icons.style_outlined,
       title: 'Card Backs',
       description:
-          'Choose one of 10 card-back designs. Your selection is used by the '
-          'Faro Challenge and Black Jack tabs and is remembered when you '
-          'reopen the app.',
+          'Choose one of 10 card-back designs: Crimson Lattice, Midnight Star, '
+          'Emerald Crown, Black Diamond, Royal Sun, Violet Constellation, '
+          'Ocean Chevron, Burgundy Orbit, Silver Mosaic, and Teal Current. '
+          'Your selection is used by the Faro Challenge and Black Jack tabs '
+          'and is remembered when you reopen the app.',
     ),
     (
       icon: Icons.view_carousel_outlined,
@@ -25,16 +27,21 @@ class HelpPage extends StatelessWidget {
       description:
           'Perform perfect out-Faro shuffles, where the original top card '
           'stays on top. Use Shuffle to advance one step, Auto Increment to '
-          'advance once per second, and Reset to restore the deck. A '
-          '52-card deck returns to its original order after 8 out-shuffles.',
+          'advance once per second, and Reset to restore the deck. Automatic '
+          'runs stop on their own when the cycle completes, and the counter '
+          'returns to 0 as the deck regains its original order. A 52-card '
+          'deck returns to its original order after 8 out-shuffles.',
     ),
     (
       icon: Icons.swap_vert,
       title: 'In-Faro Shuffle',
       description:
           'Perform perfect in-Faro shuffles, where the first card from the '
-          'lower half moves to the top. Use the same manual, automatic, and '
-          'reset controls to follow the 52-shuffle cycle.',
+          'lower half moves to the top. Use the same Shuffle, Auto Increment, '
+          'and Reset controls to follow the 52-shuffle cycle, which also '
+          'stops automatically and describes each stage: early separation, '
+          'maximum apparent randomness at 26 shuffles, then the rapid '
+          'realignment and final snap back at 51.',
     ),
     (
       icon: Icons.pin_outlined,
@@ -110,7 +117,9 @@ class HelpPage extends StatelessWidget {
                   const SizedBox(height: 6),
                   Text(
                     'Tap a tab to open it, swipe between pages, or scroll the '
-                    'top tab bar horizontally to reach hidden tabs.',
+                    'top tab bar horizontally to reach hidden tabs. The bar '
+                    'scrolls by itself when all nine tabs would not fit, '
+                    'such as on a narrow window or with large text sizes.',
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],

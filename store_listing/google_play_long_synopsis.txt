@@ -9,7 +9,7 @@ Step through both major Faro methods:
 - Out-Faro, where the original top card stays on top
 - In-Faro, where the first card from the lower half moves to the top
 
-Advance one shuffle at a time, run the sequence automatically, follow the shuffle counter, or reset the deck. Animated movement and cycle messages make each change easier to track. A standard deck completes an out-Faro cycle in 8 shuffles and an in-Faro cycle in 52.
+Advance one shuffle at a time, run the sequence automatically, follow the shuffle counter, or reset the deck. Automatic runs stop on their own when the cycle completes. Animated movement and cycle messages make each change easier to track, and the in-Faro view narrates how a mixed-looking deck gradually realigns and snaps back to its original order. A standard deck completes an out-Faro cycle in 8 shuffles and an in-Faro cycle in 52.
 
 LEARN BINARY SHUFFLE SEQUENCES
 
@@ -25,7 +25,7 @@ Apply an In, Out, or Binary shuffle order before dealing five player hands and a
 
 CUSTOMIZE AND EXPLORE
 
-Browse the complete deck grouped by suit and choose from 10 card-back designs. Your selected design is remembered and used in the Faro Challenge and Black Jack views. The Information tab can send a question with displayed app diagnostics and load app-filtered inquiry details; these network features require an internet connection.
+Browse the complete deck grouped by suit and choose from 10 card-back designs: Crimson Lattice, Midnight Star, Emerald Crown, Black Diamond, Royal Sun, Violet Constellation, Ocean Chevron, Burgundy Orbit, Silver Mosaic, and Teal Current. Your selected design is remembered and used in the Faro Challenge and Black Jack views. The Information tab has a Contact view for sending a question with displayed app diagnostics and an Inquiries view that loads app-filtered submission details; these network features require an internet connection. Every tab also has a built-in Help page describing its controls.
 
 KEY FEATURES
 
@@ -36,8 +36,9 @@ KEY FEATURES
 - Face-down Faro prediction challenge with Out, In, and Binary modes
 - Five-hand Black Jack table with automatic dealer play
 - Persistent Black Jack progress and shuffle settings
-- 10 selectable card-back designs
+- 10 named, persistent card-back designs
 - Responsive layouts for phones, tablets, and larger screens
+- Scrollable tab bar that keeps every tab reachable at large text sizes
 - Built-in Help plus network-based contact and inquiry views
 
 Explore the structure behind perfect shuffles and put that knowledge into practice with Shuffle Master.
