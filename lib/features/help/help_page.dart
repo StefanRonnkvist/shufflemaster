@@ -25,66 +25,69 @@ class HelpPage extends StatelessWidget {
       icon: Icons.shuffle,
       title: 'Out-Faro Shuffle',
       description:
-          'Perform perfect out-Faro shuffles, where the original top card '
-          'stays on top. Use Shuffle to advance one step, Auto Increment to '
-          'advance once per second, and Reset to restore the deck. Automatic '
-          'runs stop on their own when the cycle completes, and the counter '
-          'returns to 0 as the deck regains its original order. A 52-card '
-          'deck returns to its original order after 8 out-shuffles.',
+          'A perfect out-Faro interlaces the two equal halves while keeping '
+          'the original top and bottom cards in place. Tap Shuffle for one '
+          'step, Auto Increment to shuffle once per second, or Reset to restore '
+          'the original deck. Auto Increment stops at the end of the cycle; '
+          'the counter returns to 0 when the deck returns to its original '
+          'order after eight out-shuffles. ',
     ),
     (
       icon: Icons.swap_vert,
       title: 'In-Faro Shuffle',
       description:
-          'Perform perfect in-Faro shuffles, where the first card from the '
-          'lower half moves to the top. Use the same Shuffle, Auto Increment, '
-          'and Reset controls to follow the 52-shuffle cycle, which also '
-          'stops automatically and describes each stage: early separation, '
-          'maximum apparent randomness at 26 shuffles, then the rapid '
-          'realignment and final snap back at 51.',
+          'A perfect in-Faro interlaces the halves starting with the lower '
+          'half, moving the original top card to position 2. Tap Shuffle for '
+          'one step, Auto Increment to shuffle once per second, or Reset to '
+          'restore the original deck. The 52-step cycle stops automatically '
+          'and describes its stages: early separation, maximum apparent '
+          'randomness at shuffle 26, then realignment and a snap back at 51.',
     ),
     (
       icon: Icons.pin_outlined,
       title: 'Binary Shuffle',
       description:
-          'Enter a value from 0 to 51 to represent a six-bit Faro sequence. '
-          'The circles show which place values are ignored and whether each '
-          'processed bit applies an Out (0) or In (1) shuffle. Select Emulate '
-          'to watch the original top card move through the sequence; 0 '
-          'ignores every place and leaves the deck unchanged.',
+          'Enter a value from 0 to 51 to represent a six-bit Faro sequence '
+          'using place values 32, 16, 8, 4, 2, and 1. The circles show which '
+          'places are ignored and whether each processed bit applies an Out '
+          'shuffle (0) or an In shuffle (1); unused higher places are ignored. '
+          'Select Emulate to watch the deck and original top card move through '
+          'the sequence. A value of 0 ignores every place and leaves the deck unchanged.',
     ),
     (
       icon: Icons.layers_outlined,
       title: 'Faro Challenge',
       description:
-          'Choose Out (1-8), In (1-52), or a Binary shuffle sequence, then '
-          'predict where a card will land. Positions run from 1 at the left '
-          'to 52 at the right. Tap any face-down position to reveal or hide '
-          'its card. Changing a setting hides every revealed card and builds '
-          'the new deck order.',
+          'Choose Out (1-8), In (1-52), or Binary, then predict where a card '
+          'will land in the resulting deck. Positions are numbered 1 to 52. '
+          'Tap any face-down card to reveal it, and tap again to hide it. '
+          'Changing the shuffle mode, count, or binary sequence hides all '
+          'revealed cards and recalculates the deck order.',
     ),
     (
       icon: Icons.casino_outlined,
       title: 'Black Jack',
       description:
-          'Choose In (1-52), Out (1-8), or Binary (1-51), then Deal to five '
-          'players and the dealer. Take each highlighted hand in order with '
-          'Hit or Stand. A bust or 21 ends that turn automatically. After all '
-          'players finish, the dealer hits on 17 or less unless every player '
-          'busted, then non-busted hands show Win, Lose, or Push. Continue '
-          'deals from the remaining deck when at least 12 cards remain; '
-          'Shuffle rebuilds the selected order. The game and settings are '
-          'saved locally and restored after restart.',
+          'Choose In (1-52), Out (1-8), or Binary (1-51), set its value, and '
+          'tap Deal to give two cards to each of five players and the dealer. '
+          'Play the highlighted hand with Hit or Stand; a bust or 21 ends the '
+          'turn automatically. After all players finish, the dealer hits on '
+          '17 or less unless every player busted. Non-busted hands are marked '
+          'Win, Lose, or Push. Continue deals a new round when at least 12 '
+          'cards remain; Shuffle rebuilds the selected order and clears the '
+          'round. Game progress and settings are saved on this device and restored '
+          'after restart.',
     ),
     (
       icon: Icons.info_outline,
       title: 'Information',
       description:
-          'Use Contact to send your name, email, question, and the displayed '
-          'app diagnostics to the developer. Inquiries downloads submissions '
-          'for this app and displays their app, version, subject, message, and '
-          'date fields without names or email addresses. Both views require '
-          'an internet connection.',
+          'Contact requires your name, return email, and question, and sends '
+          'those details with app diagnostics to the developer over the '
+          'internet. Inquiries loads online submissions for this app and '
+          'displays app, version, series, content, and date/time details; '
+          'names and email addresses are not displayed. Both views require an '
+          'internet connection.',
     ),
     (
       icon: Icons.help_outline,
@@ -118,8 +121,10 @@ class HelpPage extends StatelessWidget {
                   Text(
                     'Tap a tab to open it, swipe between pages, or scroll the '
                     'top tab bar horizontally to reach hidden tabs. The bar '
-                    'scrolls by itself when all nine tabs would not fit, '
-                    'such as on a narrow window or with large text sizes.',
+                    'scrolls when all nine tabs do not fit, such as in a narrow '
+                    'window or with large text sizes. The Information tab has '
+                    'online Contact and Inquiries views; you need an internet connection '
+                    'to use them.',
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],

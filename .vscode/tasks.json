@@ -16,8 +16,8 @@
       "label": "Pub Update All",
       "dependsOrder": "sequence",
       "dependsOn": [
-        "flutter: pub upgrade",
-        "Flutter: Pub Upgrade Major Versions",
+        "Flutter: Pub Upgrade",
+        "Flutter: Pub Upgrade Major",
         "Flutter: Pub Outdated",
         "Flutter: Pub Get"
       ],
@@ -28,8 +28,6 @@
       "label": "Build All Release Targets",
       "dependsOrder": "sequence",
       "dependsOn": [
-        "Preclean Android Release Locks",
-        "Flutter: Version Bump",
         "Build Release APK",
         "Build Release App Bundle",
         "Build Release Web",
@@ -81,26 +79,6 @@
         "pub",
         "outdated"
       ],
-      "problemMatcher": []
-    },
-    {
-      "label": "Preclean Android Release Locks",
-      "type": "shell",
-      "command": "pwsh",
-      "dependsOn": [
-        "Flutter: Fix Apple Ephemeral Packages"
-      ],
-      "args": [
-        "-NoProfile",
-        "-ExecutionPolicy",
-        "Bypass",
-        "-File",
-        "tool/preclean_android_release_locks.ps1"
-      ],
-      "presentation": {
-        "reveal": "never",
-        "panel": "shared"
-      },
       "problemMatcher": []
     },
     {
@@ -159,10 +137,8 @@
     {
       "label": "Build Release MSIX",
       "type": "shell",
-      "command": "dart run msix:create --build-windows=false",
-      "dependsOn": [
-        "Build Release Windows"
-      ],
+      "command": "dart run msix:create --build-windows=false --install-certificate=false",
+      "dependsOn": [],
       "group": "build",
       "presentation": {
         "reveal": "always",
@@ -193,7 +169,8 @@
         "-ExecutionPolicy",
         "Bypass",
         "-File",
-        "scripts/bump-version.ps1"
+        "scripts/bump-version.ps1",
+        "-NoGit"
       ],
       "group": "build",
       "problemMatcher": []

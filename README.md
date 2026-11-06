@@ -1,6 +1,6 @@
 # Shuffle Master
 
-Shuffle Master is a cross-platform Flutter app for exploring a standard 52-card deck, visualizing perfect Faro shuffles, emulating six-bit shuffle sequences, testing card-position predictions, and playing five-hand Black Jack from Faro-ordered decks.
+Shuffle Master is a Flutter app for exploring a standard 52-card deck, visualizing perfect Faro shuffles, emulating six-bit shuffle sequences, testing card-position predictions, and playing five-hand Black Jack from Faro-ordered decks. The configured release workflows build for Android, Web, and Windows.
 
 ## Features
 
@@ -14,7 +14,8 @@ Shuffle Master is a cross-platform Flutter app for exploring a standard 52-card 
 - Apply an In, Out, or Binary deck order before playing five hands of Black Jack against an automatic dealer.
 - Continue Black Jack rounds while at least 12 cards remain and restore the current game after restarting the app.
 - Select from 10 card-back designs and retain the selection between sessions.
-- Use responsive layouts across Android, iOS, web, Windows, macOS, and Linux.
+- Use responsive layouts that adapt from phone-sized screens to tablets and desktops.
+- Build release packages for Android, Web, and Windows with the configured release workflows.
 - Scroll the tab bar horizontally on narrow windows or with large text scaling when all nine tabs do not fit.
 - Contact the developer with app diagnostics and view app-filtered inquiries from the Information tab.
 
@@ -109,7 +110,7 @@ For an Android APK build that first clears common locked build outputs:
 ./scripts/build-apk-release.ps1 -KillFlutterProcesses
 ```
 
-The app version is defined in `pubspec.yaml` using Flutter's `major.minor.patch+build` format.
+The app version is `0.1.21+22`, defined in `pubspec.yaml` using Flutter's `major.minor.patch+build` format.
 
 ## Store Listing
 

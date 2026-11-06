@@ -1,1 +1,1 @@
-Visualize Faro shuffles, track card positions, play ordered Black Jack.
+Visualize perfect Faro shuffles, track card positions, and play Black Jack.

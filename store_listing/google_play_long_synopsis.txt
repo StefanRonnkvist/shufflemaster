@@ -25,7 +25,9 @@ Apply an In, Out, or Binary shuffle order before dealing five player hands and a
 
 CUSTOMIZE AND EXPLORE
 
-Browse the complete deck grouped by suit and choose from 10 card-back designs: Crimson Lattice, Midnight Star, Emerald Crown, Black Diamond, Royal Sun, Violet Constellation, Ocean Chevron, Burgundy Orbit, Silver Mosaic, and Teal Current. Your selected design is remembered and used in the Faro Challenge and Black Jack views. The Information tab has a Contact view for sending a question with displayed app diagnostics and an Inquiries view that loads app-filtered submission details; these network features require an internet connection. Every tab also has a built-in Help page describing its controls.
+Browse the complete deck grouped by suit and choose from 10 card-back designs: Crimson Lattice, Midnight Star, Emerald Crown, Black Diamond, Royal Sun, Violet Constellation, Ocean Chevron, Burgundy Orbit, Silver Mosaic, and Teal Current. Your selected design is remembered and used in the Faro Challenge and Black Jack views.
+
+The app includes Card Backs, Card Deck, Out-Faro Shuffle, In-Faro Shuffle, Binary Shuffle, Faro Challenge, Black Jack, Information, and Help tabs. The Information tab's Contact view sends your name, return email, question, and displayed app diagnostics to the developer. Inquiries loads app-filtered submission details, showing app, version, series, content, and date/time without displaying names or email addresses. Both Information views require an internet connection. The Help tab explains the features and controls.
 
 KEY FEATURES
 
