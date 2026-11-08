@@ -1,11 +1,11 @@
 # Shuffle Master
 
-Shuffle Master is a Flutter app for exploring a standard 52-card deck, visualizing perfect Faro shuffles, emulating six-bit shuffle sequences, testing card-position predictions, and playing five-hand Black Jack from Faro-ordered decks. The configured release workflows build for Android, Web, and Windows.
+Shuffle Master is a Flutter app for exploring a standard 52-card deck, visualizing deterministic perfect Faro shuffles, emulating six-bit shuffle sequences, testing card-position predictions, and playing five-hand Black Jack from Faro-ordered decks. Its card and shuffle tools work locally; only Contact and Inquiries need an internet connection. The configured release workflows build for Android, Web, and Windows.
 
 ## Features
 
 - Browse a complete 52-card deck grouped by suit.
-- Step through in-Faro and out-Faro shuffles with animated card movement.
+- Step through deterministic in-Faro and out-Faro shuffles with animated card movement; these perfect shuffles reorder cards rather than randomize them.
 - Run shuffles automatically at one-second intervals or advance them manually, and stop automatically when the cycle completes.
 - Follow narrated cycle messages, including the in-Faro halfway point where the deck appears most random before snapping back into order.
 - Track the 8-step out-Faro and 52-step in-Faro cycles, then reset the deck to its original order.
@@ -17,7 +17,7 @@ Shuffle Master is a Flutter app for exploring a standard 52-card deck, visualizi
 - Use responsive layouts that adapt from phone-sized screens to tablets and desktops.
 - Build release packages for Android, Web, and Windows with the configured release workflows.
 - Scroll the tab bar horizontally on narrow windows or with large text scaling when all nine tabs do not fit.
-- Contact the developer with app diagnostics and view app-filtered inquiries from the Information tab.
+- Contact the developer with your name, return email, question, and app diagnostics, or view inquiries filtered to this app; both Information views require internet access.
 
 ## App Tabs
 
@@ -110,14 +110,16 @@ For an Android APK build that first clears common locked build outputs:
 ./scripts/build-apk-release.ps1 -KillFlutterProcesses
 ```
 
-The app version is `0.1.21+22`, defined in `pubspec.yaml` using Flutter's `major.minor.patch+build` format.
+The app version is `0.1.23+24`, defined in `pubspec.yaml` using Flutter's `major.minor.patch+build` format.
 
 ## Store Listing
 
-Google Play descriptions are maintained in:
+Google Play descriptions are maintained in the publishing-copy files:
 
-- `store_listing/google_play_short_synopsis.txt`
-- `store_listing/google_play_long_synopsis.txt`
+- `store_listing/google_play_short_synopsis.txt` — short description (80-character limit)
+- `store_listing/google_play_long_synopsis.txt` — full description (4,000-character limit)
+
+The long description covers every app tab and explains which features work offline versus which require an internet connection.
 
 ## Project Layout
 
